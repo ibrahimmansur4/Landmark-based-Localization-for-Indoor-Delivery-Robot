@@ -10,7 +10,7 @@ This repository contains the source code and documentation for the final year pr
 - [Methodology](#methodology)
 - [Software and Tools](#software-and-tools)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contributors](#contributors)
 - [License](#license)
 
 ## Objective
@@ -49,8 +49,10 @@ The following software and tools are used in this project:
 
 
 
-## Contributing
-
+## Contributors
+- Ibrahim Bin Mansur
+- Talha Zahid
+- Sohaib Junaid
 
 
 ## License
