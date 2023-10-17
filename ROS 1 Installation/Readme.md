@@ -1,1 +1,0 @@
-Follow  [these](http://wiki.ros.org/noetic/Installation/Ubuntu) steps. 
