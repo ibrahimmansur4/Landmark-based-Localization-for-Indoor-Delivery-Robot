@@ -79,7 +79,7 @@ Feel free to contribute, report issues, or suggest improvements by creating a pu
 ## Acknowledgements
 Special thanks to the contributors of the ROS projects used in this repository. The links to their original repositories are provided below:
 
-- [amor-ros-pkg/rosaria](https://github.com/-amor-ros-pkg/rosaria)
+- [amor-ros-pkg/rosaria](https://github.com/amor-ros-pkg/rosaria)
 - [reedhedges/AriaCoda](https://github.com/reedhedges/AriaCoda)
 - [NKU-MobFly-Robotics/p3dx](https://github.com/NKU-MobFly-Robotics/p3dx)
 
