@@ -1,0 +1,32 @@
+# move_base parameters
+move_base:
+  base_global_planner: "navfn/NavfnROS"
+  base_local_planner: "dwa_local_planner/DWAPlannerROS"
+  controller_frequency: 10.0
+
+# global costmap parameters
+global_costmap:
+  global_frame: "map"
+  robot_base_frame: "base_link"
+  update_frequency: 5.0
+  static_map: true
+
+# local costmap parameters
+local_costmap:
+  global_frame: "odom"
+  robot_base_frame: "base_link"
+  update_frequency: 5.0
+  static_map: false
+
+# DWA local planner parameters
+dwa_local_planner:
+  # Set parameters specific to the DWA local planner
+  # Adjust as needed based on your robot's characteristics
+  acc_lim_x: 2.0
+  acc_lim_theta: 3.0
+  max_trans_vel: 0.5
+  min_trans_vel: 0.1
+  max_vel_x: 0.5
+  min_vel_x: 0.0
+  max_rotational_vel: 1.0
+  min_in_place_rotational_vel: 0.4

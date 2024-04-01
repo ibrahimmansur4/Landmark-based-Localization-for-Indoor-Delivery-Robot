@@ -1,0 +1,20 @@
+<launch>
+
+    <!-- Launch the robot -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!-- <include file="$(find p3dx_gazebo)/launch/p3dx_with_camera.launch"> -->
+      <arg name="world_name" value="$(find my_robot_control)/worlds/second_world.world"/>
+      <arg name="paused" value="false"/>
+      <arg name="use_sim_time" value="true"/>
+      <arg name="gui" value="true"/>
+      <arg name="recording" value="false"/>
+      <arg name="debug" value="false"/>
+    </include>
+  
+    <!-- Launch gazebo_plugins for Pioneer3DX -->
+    <include file="$(find gazebo_plugins)/test/multi_robot_scenario/launch/pioneer3dx.gazebo.launch"/>
+  
+  
+  
+  </launch>
+  
