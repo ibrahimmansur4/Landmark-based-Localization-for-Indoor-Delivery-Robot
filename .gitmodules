@@ -1,0 +1,3 @@
+[submodule "src/p3dx-robot"]
+	path = src/p3dx-robot
+	url = https://github.com/ibrahimmansur4/p3dx-robot
