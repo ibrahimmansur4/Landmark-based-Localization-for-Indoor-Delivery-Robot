@@ -1,3 +1,15 @@
 [submodule "src/p3dx-robot"]
 	path = src/p3dx-robot
 	url = https://github.com/ibrahimmansur4/p3dx-robot
+[submodule "src/rosaria"]
+	path = src/rosaria
+	url = https://github.com/amor-ros-pkg/rosaria.git
+[submodule "src/slam_gmapping"]
+	path = src/slam_gmapping
+	url = https://github.com/ros-perception/slam_gmapping
+[submodule "src/AriaCoda"]
+	path = src/AriaCoda
+	url = git@github.com:reedhedges/AriaCoda.git
+[submodule "src/amr-ros-config"]
+	path = src/amr-ros-config
+	url = git@github.com:MobileRobots/amr-ros-config.git
