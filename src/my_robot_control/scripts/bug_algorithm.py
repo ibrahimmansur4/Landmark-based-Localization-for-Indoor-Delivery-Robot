@@ -12,8 +12,6 @@ class Bug2Algorithm:
     def __init__(self):
         rospy.init_node('bug2_node', anonymous=True)   
         # Initialize subscribers
-        #In p3dx the sonar sensor works as a single subscriber with range/arrays of sensor like a laser scan
-        #Will have to modify for the hardware implementation
         self.sonar_subscriber_1 = rospy.Subscriber('/sonar_scan_1', Range, self.sonar_callback_1)
         self.sonar_subscriber_2 = rospy.Subscriber('/sonar_scan_2', Range, self.sonar_callback_2)
         self.sonar_subscriber_3 = rospy.Subscriber('/sonar_scan_3', Range, self.sonar_callback_3)
@@ -231,11 +229,7 @@ class Bug2Algorithm:
         
     def adjust_position_goal(self):
         # Move the robot slightly forward
-        #Will have to add checks for the colors so only the goal color is the 
-        #one that is detected
-        #The while loop should have an if statement that checks if the color is
-        #the one associated with the room
-        while self.detected_color != 'Blue': #hardcoded for now
+        while self.detected_color != 'Blue':
             twist_msg = Twist()
             twist_msg.linear.x = 1.0
             self.cmd_vel_pub.publish(twist_msg)

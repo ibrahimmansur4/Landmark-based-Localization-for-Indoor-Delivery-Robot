@@ -100,9 +100,11 @@ class ColorDetector:
         cv2.drawContours(cv_image, contours_purple, -1, (128, 0, 128), 2)  # Purple
         cv2.drawContours(cv_image, contours_black, -1, (0, 0, 0), 2)  # Black
 
-        # Display the detected colors in a single window
-        cv2.imshow('Color Detection', cv_image)
+        # Display the detected colors in a resized window
+        resized_image = cv2.resize(cv_image, (0, 0), fx=0.5, fy=0.5)  # Resize the image to half its original dimensions
+        cv2.imshow('Color Detection', resized_image)
         cv2.waitKey(1)
+
 
         # Output detected color
         detected_color = ""
