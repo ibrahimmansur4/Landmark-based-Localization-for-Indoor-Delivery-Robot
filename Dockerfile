@@ -1,5 +1,5 @@
 # Start from the base image provided
-FROM ibrahimmansur4/my_fyp:v2.1
+FROM ibrahimmansur4/my_fyp:v2.2
 
 # Update package lists and install required packages
 RUN apt-get update && \
