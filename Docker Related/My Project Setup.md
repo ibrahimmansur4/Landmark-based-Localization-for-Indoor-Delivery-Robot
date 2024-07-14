@@ -50,7 +50,7 @@ docker start <container>
 docker exec -it <container> bash
 
 # Check the version of the system
-docker_release -a
+lsb_release -a
 ```
 
 ## Install Git in the Container
